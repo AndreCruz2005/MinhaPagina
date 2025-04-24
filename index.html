@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>André Vinícius</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+        <style>
+            * {
+                font-family: "Courier New", Courier, monospace;
+            }
+
+            body {
+                margin: 0;
+                background-color: #fef7ed;
+                background-size: 40px 40px;
+                background-image: linear-gradient(to right, #bdb9b9a2 1px, transparent 1px),
+                    linear-gradient(to bottom, #bdb9b9a2 1px, transparent 1px);
+            }
+        </style>
+        <link href="./header.css" rel="stylesheet" />
+        <link href="./favorites.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header id="profile">
+            <h1>Sejam bem vindos! Este sou eu...</h1>
+
+            <h1>E VOCÊ ESTÁ EM MINHA PÁGINA!</h1>
+
+            <div id="me">
+                <img src="./assets/eu.jpg" alt="eu" />
+                <div id="my-info">
+                    <div>André Vinícius</div>
+                    <div>Aluno de Ciência da Computação desde 2024.1</div>
+                </div>
+            </div>
+
+            <div id="page-info">
+                <img src="assets/icons8-html-5.svg" />
+                <h3>
+                    Construída exclusivamente com
+                    <span style="background: #d04804; padding: 0 3px; color: whitesmoke">HTML</span> e
+                    <span style="background: rebeccapurple; padding: 0 3px; color: whitesmoke">CSS</span>
+                </h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Official_CSS_Logo.svg" />
+            </div>
+        </header>
+
+        <header id="sub-header">
+            <h1>MEUS 10 ... FAVORITOS!</h1>
+            <h2>Selecione uma das categorias para ver os meus top 10 em cada uma além de uma pequena review.</h2>
+        </header>
+
+        <main id="selectors">
+            <!-- Favorite selectors-->
+            <input type="radio" id="Movies" name="selector" checked />
+            <label for="Movies" id="label-movies">Filmes</label>
+
+            <input type="radio" id="Books" name="selector" />
+            <label for="Books" id="label-books">Livros</label>
+
+            <input type="radio" id="Games" name="selector" />
+            <label for="Games" id="label-games">Jogos</label>
+
+            <input type="radio" id="Music" name="selector" />
+            <label for="Music" id="label-music">Músicas</label>
+
+            <input type="radio" id="Pokémon" name="selector" />
+            <label for="Pokémon" id="label-pokémon">Pokémon</label>
+
+            <!-- Favorite displays-->
+            <div class="favorites" id="favorite-movies">
+                <div class="item-card">
+                    <div class="item-number">1</div>
+                    <img class="item-image" src="https://image.tmdb.org/t/p/w1280/maFjKnJ62hDQ9E66dKqDZgbUy0H.jpg" />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">2</div>
+                    <img class="item-image" src="https://image.tmdb.org/t/p/w1280/maFjKnJ62hDQ9E66dKqDZgbUy0H.jpg" />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">3</div>
+                    <img class="item-image" src="https://image.tmdb.org/t/p/w1280/maFjKnJ62hDQ9E66dKqDZgbUy0H.jpg" />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">4</div>
+                    <img class="item-image" src="https://image.tmdb.org/t/p/w1280/maFjKnJ62hDQ9E66dKqDZgbUy0H.jpg" />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">5</div>
+                    <img class="item-image" src="https://image.tmdb.org/t/p/w1280/maFjKnJ62hDQ9E66dKqDZgbUy0H.jpg" />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">6</div>
+                    <img class="item-image" src="https://image.tmdb.org/t/p/w1280/maFjKnJ62hDQ9E66dKqDZgbUy0H.jpg" />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">7</div>
+                    <img class="item-image" src="https://image.tmdb.org/t/p/w1280/maFjKnJ62hDQ9E66dKqDZgbUy0H.jpg" />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">8</div>
+                    <img class="item-image" src="https://image.tmdb.org/t/p/w1280/maFjKnJ62hDQ9E66dKqDZgbUy0H.jpg" />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">9</div>
+                    <img class="item-image" src="https://image.tmdb.org/t/p/w1280/maFjKnJ62hDQ9E66dKqDZgbUy0H.jpg" />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">10</div>
+                    <img class="item-image" src="https://image.tmdb.org/t/p/w1280/maFjKnJ62hDQ9E66dKqDZgbUy0H.jpg" />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="favorites" id="favorite-books">
+                <div class="item-card">
+                    <div class="item-number">1</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">2</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">3</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">4</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">5</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">6</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">7</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">8</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">9</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">10</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="favorites" id="favorite-games">
+                <div class="item-card">
+                    <div class="item-number">1</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">2</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">3</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">4</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">5</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">6</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">7</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">8</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">9</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">10</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="favorites" id="favorite-music">
+                <div class="item-card">
+                    <div class="item-number">1</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">2</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">3</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">4</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">5</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">6</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">7</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">8</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">9</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">10</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="favorites" id="favorite-pokemon">
+                <div class="item-card">
+                    <div class="item-number">1</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">2</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">3</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">4</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">5</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">6</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">7</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">8</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">9</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-number">10</div>
+                    <img
+                        class="item-image"
+                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+                    />
+                    <div class="item-info">
+                        <h2 class="item-title">Lorem ipsum</h2>
+                        <p class="item-subtitle">Lorem</p>
+                        <p class="item-review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
