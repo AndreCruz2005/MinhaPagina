@@ -1,13 +1,11 @@
 #selectors {
     margin-top: 4rem;
     margin-bottom: 2rem;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     display: grid;
     align-items: center;
-    justify-content: space-between;
     gap: 30px;
     padding: 0 2%;
-
 }
 
 #selectors input {
@@ -37,7 +35,6 @@
 #Movies:checked~#label-movies,
 #Games:checked~#label-games,
 #Books:checked~#label-books,
-#Music:checked~#label-music,
 #Pokémon:checked~#label-pokémon {
     background-color: rgb(107, 255, 107);
 }
@@ -45,44 +42,51 @@
 #Movies:checked~#favorite-movies,
 #Games:checked~#favorite-games,
 #Books:checked~#favorite-books,
-#Music:checked~#favorite-music,
 #Pokémon:checked~#favorite-pokemon {
-    display: flex;
+    display: grid;
 }
 
 .favorites {
     grid-column: span 5;
     display: none;
-    flex-direction: column;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    width: 100%;
 }
 
 .item-card {
     background: rgb(242, 214, 162);
     display: flex;
+    flex-direction: column;
     border: 5px solid black;
     box-shadow: 4px 4px 0px 2px rgb(0, 0, 0);
-    justify-content: space-around;
     align-items: center;
+    text-align: center;
 
+}
+
+.item-card:first-of-type {
+    grid-column: span 3;
 }
 
 .item-number {
     font-family: roboto, 'Courier New', Courier, monospace;
     text-align: center;
     font-weight: bold;
-    width: 5%;
-    font-size: 4rem;
+
+    font-size: 2rem;
 }
 
 .item-image {
     aspect-ratio: 3 / 4;
     object-fit: cover;
-    width: 15%;
-    padding: 1% 0;
-    filter:
-        drop-shadow(6px 6px 0 rgb(0, 0, 0));
+    width: 260px;
+    filter: drop-shadow(4px 0 0 black) drop-shadow(-4px 0 0 black) drop-shadow(0 4px 0 black) drop-shadow(0 -4px 0 black);
+
+}
+
+#favorite-pokemon img {
+    filter: drop-shadow(4px 4px 0 black);
+    aspect-ratio: 1/1;
 }
 
 .item-info {
@@ -90,10 +94,11 @@
 }
 
 .item-title {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .item-subtitle {
     color: #555656;
     font-style: italic;
+    font-size: 15px;
 }
