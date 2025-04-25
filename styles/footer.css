@@ -1,0 +1,36 @@
+footer {
+    display: flex;
+    height: 120px;
+    background: #6cbddd;
+    border-top: 6px solid black;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    display: flex;
+    border: 3px solid black;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px;
+    gap: 15px;
+    box-shadow: 4px 4px 0px 2px rgb(0, 0, 0);
+    color: white;
+    background: rgb(3, 43, 58);
+}
+
+footer a:hover {
+    transform: translateY(-3px);
+    background: rgb(0, 132, 255);
+}
+
+footer a img {
+    width: 50px;
+    aspect-ratio: 1/1;
+}
+
+footer a p {
+    font-weight: bolder;
+    font-size: 22px;
+}
