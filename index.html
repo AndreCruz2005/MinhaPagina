@@ -1,517 +1,583 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Página de André</title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
-        <link
-            rel="icon"
-            href="https://portal.cin.ufpe.br/wp-content/uploads/2020/06/cropped-iconecin-32x32.png"
-            type="image/x-icon"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de André</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://portal.cin.ufpe.br/wp-content/uploads/2020/06/cropped-iconecin-32x32.png"
+      type="image/x-icon"
+    />
+    <style>
+      * {
+        font-family: "Courier New", Courier, monospace;
+        transition: all 0.3s;
+      }
+
+      body {
+        overflow-x: hidden;
+        margin: 0;
+        background-color: #fef7ed;
+        background-size: 40px 40px;
+        background-image: linear-gradient(
+            to right,
+            #bdb9b9a2 1px,
+            transparent 1px
+          ),
+          linear-gradient(to bottom, #bdb9b9a2 1px, transparent 1px);
+      }
+    </style>
+    <link href="./styles/header.css" rel="stylesheet" />
+    <link href="./styles/main.css" rel="stylesheet" />
+    <link href="./styles/footer.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header id="profile">
+      <h1>Sejam bem vindos! Este sou eu...</h1>
+
+      <h1>E VOCÊ ESTÁ EM MINHA PÁGINA!</h1>
+
+      <div id="me">
+        <img src="./assets/eu.jpg" alt="eu" />
+        <div id="my-info">
+          <div>André Vinícius</div>
+          <div>Aluno de Ciência da Computação desde 2024.1</div>
+        </div>
+      </div>
+
+      <div id="page-info">
+        <img src="assets/icons8-html-5.svg" />
+        <h3>
+          Construída exclusivamente com
+          <span style="background: #d04804; padding: 0 3px; color: whitesmoke"
+            >HTML</span
+          >
+          e
+          <span
+            style="background: rebeccapurple; padding: 0 3px; color: whitesmoke"
+            >CSS</span
+          >
+        </h3>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Official_CSS_Logo.svg"
         />
-        <style>
-            * {
-                font-family: "Courier New", Courier, monospace;
-                transition: all 0.3s;
-            }
+      </div>
+    </header>
 
-            body {
-                overflow-x: hidden;
-                margin: 0;
-                background-color: #fef7ed;
-                background-size: 40px 40px;
-                background-image: linear-gradient(to right, #bdb9b9a2 1px, transparent 1px),
-                    linear-gradient(to bottom, #bdb9b9a2 1px, transparent 1px);
-            }
-        </style>
-        <link href="./styles/header.css" rel="stylesheet" />
-        <link href="./styles/main.css" rel="stylesheet" />
-        <link href="./styles/footer.css" rel="stylesheet" />
-    </head>
-    <body>
-        <header id="profile">
-            <h1>Sejam bem vindos! Este sou eu...</h1>
+    <header id="sub-header">
+      <h1>MEUS 10 ... FAVORITOS!</h1>
+      <h2>Selecione uma das categorias para ver os meus top 10 em cada uma.</h2>
+    </header>
 
-            <h1>E VOCÊ ESTÁ EM MINHA PÁGINA!</h1>
+    <main id="selectors">
+      <!-- Favorite selectors-->
+      <input type="radio" id="Movies" name="selector" checked />
+      <label for="Movies" id="label-movies">Filmes</label>
 
-            <div id="me">
-                <img src="./assets/eu.jpg" alt="eu" />
-                <div id="my-info">
-                    <div>André Vinícius</div>
-                    <div>Aluno de Ciência da Computação desde 2024.1</div>
-                </div>
-            </div>
+      <input type="radio" id="Books" name="selector" />
+      <label for="Books" id="label-books">Livros</label>
 
-            <div id="page-info">
-                <img src="assets/icons8-html-5.svg" />
-                <h3>
-                    Construída exclusivamente com
-                    <span style="background: #d04804; padding: 0 3px; color: whitesmoke">HTML</span> e
-                    <span style="background: rebeccapurple; padding: 0 3px; color: whitesmoke">CSS</span>
-                </h3>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Official_CSS_Logo.svg" />
-            </div>
-        </header>
+      <input type="radio" id="Games" name="selector" />
+      <label for="Games" id="label-games">Jogos</label>
 
-        <header id="sub-header">
-            <h1>MEUS 10 ... FAVORITOS!</h1>
-            <h2>Selecione uma das categorias para ver os meus top 10 em cada uma.</h2>
-        </header>
+      <input type="radio" id="Pokémon" name="selector" />
+      <label for="Pokémon" id="label-pokémon">Pokémon</label>
 
-        <main id="selectors">
-            <!-- Favorite selectors-->
-            <input type="radio" id="Movies" name="selector" checked />
-            <label for="Movies" id="label-movies">Filmes</label>
+      <!-- Favorite displays-->
+      <div class="favorites" id="favorite-movies">
+        <div class="item-card">
+          <div class="item-number">10</div>
+          <img
+            class="item-image"
+            src="https://www.themoviedb.org/t/p/w1280/hkxxMIGaiCTmrEArK7J56JTKUlB.jpg"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Godzilla Minus One</h2>
+            <p class="item-subtitle">Takashi Yamazaki - 2023</p>
+          </div>
+        </div>
 
-            <input type="radio" id="Books" name="selector" />
-            <label for="Books" id="label-books">Livros</label>
+        <div class="item-card">
+          <div class="item-number">9</div>
+          <img
+            class="item-image"
+            src="https://image.tmdb.org/t/p/original/qmcKs0Aoft7MBdBoj1haZyPRgM2.jpg"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Nada de Novo no Front</h2>
+            <p class="item-subtitle">Edward Berger - 2022</p>
+          </div>
+        </div>
 
-            <input type="radio" id="Games" name="selector" />
-            <label for="Games" id="label-games">Jogos</label>
+        <div class="item-card">
+          <div class="item-number">8</div>
+          <img
+            class="item-image"
+            src="https://www.themoviedb.org/t/p/w1280/fPtUgMcLIboqlTlPrq0bQpKK8eq.jpg"
+          />
+          <div class="item-info">
+            <h2 class="item-title">O Menu</h2>
+            <p class="item-subtitle">Mark Mylod - 2022</p>
+          </div>
+        </div>
 
-            <input type="radio" id="Pokémon" name="selector" />
-            <label for="Pokémon" id="label-pokémon">Pokémon</label>
+        <div class="item-card">
+          <div class="item-number">7</div>
+          <img
+            class="item-image"
+            src="https://image.tmdb.org/t/p/original/wDhy1Ga9BoLwkHOI0jJISQem28v.jpg"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Kingsman - Serviço Secreto</h2>
+            <p class="item-subtitle">Matthew Vaughn - 2015</p>
+          </div>
+        </div>
 
-            <!-- Favorite displays-->
-            <div class="favorites" id="favorite-movies">
-                <div class="item-card">
-                    <div class="item-number">1</div>
-                    <img class="item-image" src="https://image.tmdb.org/t/p/w1280/maFjKnJ62hDQ9E66dKqDZgbUy0H.jpg" />
-                    <div class="item-info">
-                        <h2 class="item-title">Jurassic Park</h2>
-                        <p class="item-subtitle">Steven Spielberg - 1993</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">6</div>
+          <img
+            class="item-image"
+            src="https://image.tmdb.org/t/p/original/xFOZFOdQFijudZrgX53mHeBI2Ff.jpg"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Django Livre</h2>
+            <p class="item-subtitle">Quentin Tarantino - 2012</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">2</div>
-                    <img class="item-image" src="https://image.tmdb.org/t/p/original/6UjYycIR6VLYgggfNpmSPJHmFS0.jpg" />
-                    <div class="item-info">
-                        <h2 class="item-title">Bastardos Inglórios</h2>
-                        <p class="item-subtitle">Quentin Tarantino - 2009</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">5</div>
+          <img
+            class="item-image"
+            src="https://image.tmdb.org/t/p/original/iCvQFLywQLuolTWjRJPRfWWbr1C.jpg"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Tudo em Todo o Lugar ao Mesmo Tempo</h2>
+            <p class="item-subtitle">Daniel Kwan e Daniel Scheinert - 2022</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">3</div>
-                    <img
-                        class="item-image"
-                        src="https://www.themoviedb.org/t/p/w1280/pThyQovXQrw2m0s9x82twj48Jq4.jpg"
-                    />
-                    <div class="item-info">
-                        <h2 class="item-title">Knives Out</h2>
-                        <p class="item-subtitle">Rian Johnson - 2019</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">4</div>
+          <img
+            class="item-image"
+            src="https://image.tmdb.org/t/p/original/gfnXixcGC060QcG6JPxN6AMdVsq.jpg"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Cidade de Deus</h2>
+            <p class="item-subtitle">Fernando Meirelles - 2002</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">4</div>
-                    <img class="item-image" src="https://image.tmdb.org/t/p/original/gfnXixcGC060QcG6JPxN6AMdVsq.jpg" />
-                    <div class="item-info">
-                        <h2 class="item-title">Cidade de Deus</h2>
-                        <p class="item-subtitle">Fernando Meirelles - 2002</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">3</div>
+          <img
+            class="item-image"
+            src="https://www.themoviedb.org/t/p/w1280/pThyQovXQrw2m0s9x82twj48Jq4.jpg"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Knives Out</h2>
+            <p class="item-subtitle">Rian Johnson - 2019</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">5</div>
-                    <img class="item-image" src="https://image.tmdb.org/t/p/original/iCvQFLywQLuolTWjRJPRfWWbr1C.jpg" />
-                    <div class="item-info">
-                        <h2 class="item-title">Tudo em Todo o Lugar ao Mesmo Tempo</h2>
-                        <p class="item-subtitle">Daniel Kwan e Daniel Scheinert - 2022</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">2</div>
+          <img
+            class="item-image"
+            src="https://image.tmdb.org/t/p/original/6UjYycIR6VLYgggfNpmSPJHmFS0.jpg"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Bastardos Inglórios</h2>
+            <p class="item-subtitle">Quentin Tarantino - 2009</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">6</div>
-                    <img class="item-image" src="https://image.tmdb.org/t/p/original/xFOZFOdQFijudZrgX53mHeBI2Ff.jpg" />
-                    <div class="item-info">
-                        <h2 class="item-title">Django Livre</h2>
-                        <p class="item-subtitle">Quentin Tarantino - 2012</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">1</div>
+          <img
+            class="item-image"
+            src="https://image.tmdb.org/t/p/w1280/maFjKnJ62hDQ9E66dKqDZgbUy0H.jpg"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Jurassic Park</h2>
+            <p class="item-subtitle">Steven Spielberg - 1993</p>
+          </div>
+        </div>
+      </div>
 
-                <div class="item-card">
-                    <div class="item-number">7</div>
-                    <img class="item-image" src="https://image.tmdb.org/t/p/original/wDhy1Ga9BoLwkHOI0jJISQem28v.jpg" />
-                    <div class="item-info">
-                        <h2 class="item-title">Kingsman - Serviço Secreto</h2>
-                        <p class="item-subtitle">Matthew Vaughn - 2015</p>
-                    </div>
-                </div>
+      <div class="favorites" id="favorite-books">
+        <div class="item-card">
+          <div class="item-number">10</div>
+          <img
+            class="item-image"
+            src="https://covers.openlibrary.org/b/id/8133582-L.jpg"
+          />
+          <div class="item-info">
+            <h2 class="item-title">A Guerra dos Tronos</h2>
+            <p class="item-subtitle">George R. R. Martin - 1996</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">8</div>
-                    <img
-                        class="item-image"
-                        src="https://www.themoviedb.org/t/p/w1280/fPtUgMcLIboqlTlPrq0bQpKK8eq.jpg"
-                    />
-                    <div class="item-info">
-                        <h2 class="item-title">O Menu</h2>
-                        <p class="item-subtitle">Mark Mylod - 2022</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">9</div>
+          <img
+            class="item-image"
+            src="https://covers.openlibrary.org/b/id/12456920-L.jpg"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Jurassic Park</h2>
+            <p class="item-subtitle">Michael Crichton - 1990</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">9</div>
-                    <img class="item-image" src="https://image.tmdb.org/t/p/original/qmcKs0Aoft7MBdBoj1haZyPRgM2.jpg" />
-                    <div class="item-info">
-                        <h2 class="item-title">Nada de Novo no Front</h2>
-                        <p class="item-subtitle">Edward Berger - 2022</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">8</div>
+          <img class="item-image" src="assets/nas_montanhas_da_loucura.jpg" />
+          <div class="item-info">
+            <h2 class="item-title">Nas Montanhas da Loucura</h2>
+            <p class="item-subtitle">H. P. Lovecraft - 1936</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">10</div>
-                    <img
-                        class="item-image"
-                        src="https://www.themoviedb.org/t/p/w1280/hkxxMIGaiCTmrEArK7J56JTKUlB.jpg"
-                    />
-                    <div class="item-info">
-                        <h2 class="item-title">Godzilla Minus One</h2>
-                        <p class="item-subtitle">Takashi Yamazaki - 2023</p>
-                    </div>
-                </div>
-            </div>
+        <div class="item-card">
+          <div class="item-number">7</div>
+          <img
+            class="item-image"
+            src="https://covers.openlibrary.org/b/id/12370475-L.jpg"
+          />
+          <div class="item-info">
+            <h2 class="item-title">A Volta ao Mundo em 80 Dias</h2>
+            <p class="item-subtitle">Jules Verne - 1873</p>
+          </div>
+        </div>
 
-            <div class="favorites" id="favorite-books">
-                <div class="item-card">
-                    <div class="item-number">1</div>
-                    <img
-                        class="item-image"
-                        src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
-                    />
-                    <div class="item-info">
-                        <h2 class="item-title">O Guia do Mochileiro das Galáxias</h2>
-                        <p class="item-subtitle">Douglas Adams - 1979</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">6</div>
+          <img
+            class="item-image"
+            src="https://covers.openlibrary.org/b/id/13348505-L.jpg"
+          />
+          <div class="item-info">
+            <h2 class="item-title">O Cão dos Baskervilles</h2>
+            <p class="item-subtitle">Arthur Conan Doyle - 1902</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">2</div>
-                    <img class="item-image" src="https://covers.openlibrary.org/b/id/12026493-L.jpg" />
-                    <div class="item-info">
-                        <h2 class="item-title">Drácula</h2>
-                        <p class="item-subtitle">Bram Stoker - 1897</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">5</div>
+          <img
+            class="item-image"
+            src="https://covers.openlibrary.org/b/id/12374535-L.jpg"
+          />
+          <div class="item-info">
+            <h2 class="item-title">O Sol É para Todos</h2>
+            <p class="item-subtitle">Harper Lee - 1960</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">3</div>
-                    <img class="item-image" src="https://covers.openlibrary.org/b/id/12370917-L.jpg" />
-                    <div class="item-info">
-                        <h2 class="item-title">Os Miseráveis</h2>
-                        <p class="item-subtitle">Victor Hugo - 1862</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">4</div>
+          <img
+            class="item-image"
+            src="https://covers.openlibrary.org/b/id/8172473-L.jpg"
+          />
+          <div class="item-info">
+            <h2 class="item-title">1984</h2>
+            <p class="item-subtitle">George Orwell - 1949</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">4</div>
-                    <img class="item-image" src="https://covers.openlibrary.org/b/id/8172473-L.jpg" />
-                    <div class="item-info">
-                        <h2 class="item-title">1984</h2>
-                        <p class="item-subtitle">George Orwell - 1949</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">3</div>
+          <img
+            class="item-image"
+            src="https://covers.openlibrary.org/b/id/12370917-L.jpg"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Os Miseráveis</h2>
+            <p class="item-subtitle">Victor Hugo - 1862</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">5</div>
-                    <img class="item-image" src="https://covers.openlibrary.org/b/id/12374535-L.jpg" />
-                    <div class="item-info">
-                        <h2 class="item-title">O Sol É para Todos</h2>
-                        <p class="item-subtitle">Harper Lee - 1960</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">2</div>
+          <img
+            class="item-image"
+            src="https://covers.openlibrary.org/b/id/12026493-L.jpg"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Drácula</h2>
+            <p class="item-subtitle">Bram Stoker - 1897</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">6</div>
-                    <img class="item-image" src="https://covers.openlibrary.org/b/id/13348505-L.jpg" />
-                    <div class="item-info">
-                        <h2 class="item-title">O Cão dos Baskervilles</h2>
-                        <p class="item-subtitle">Arthur Conan Doyle - 1902</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">1</div>
+          <img
+            class="item-image"
+            src="https://ia902309.us.archive.org/view_archive.php?archive=/20/items/l_covers_0008/l_covers_0008_54.zip&file=0008540059-L.jpg"
+          />
+          <div class="item-info">
+            <h2 class="item-title">O Guia do Mochileiro das Galáxias</h2>
+            <p class="item-subtitle">Douglas Adams - 1979</p>
+          </div>
+        </div>
+      </div>
+      <div class="favorites" id="favorite-games">
+        <div class="item-card">
+          <div class="item-number">10</div>
+          <img
+            class="item-image"
+            src="https://www.giantbomb.com/a/uploads/scale_small/20/201266/3564942-e0da8b90198e94301bc4f0374f9d4099c.png"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Sid Meier's Civilization VI</h2>
+            <p class="item-subtitle">Firaxis - 2016</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">7</div>
-                    <img class="item-image" src="https://covers.openlibrary.org/b/id/12370475-L.jpg" />
-                    <div class="item-info">
-                        <h2 class="item-title">A Volta ao Mundo em 80 Dias</h2>
-                        <p class="item-subtitle">Jules Verne - 1873</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">9</div>
+          <img
+            class="item-image"
+            src="https://images.igdb.com/igdb/image/upload/t_cover_big/co1sfj.webp"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Disco Elysium</h2>
+            <p class="item-subtitle">ZA/UM - 2019</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">8</div>
-                    <img class="item-image" src="assets/nas_montanhas_da_loucura.jpg" />
-                    <div class="item-info">
-                        <h2 class="item-title">Nas Montanhas da Loucura</h2>
-                        <p class="item-subtitle">H. P. Lovecraft - 1936</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">8</div>
+          <img
+            class="item-image"
+            src="https://howlongtobeat.com/games/51545_Pokmon_Showdown.png"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Pokémon Showdown!</h2>
+            <p class="item-subtitle">Zarel - 2011</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">9</div>
-                    <img class="item-image" src="https://covers.openlibrary.org/b/id/12456920-L.jpg" />
-                    <div class="item-info">
-                        <h2 class="item-title">Jurassic Park</h2>
-                        <p class="item-subtitle">Michael Crichton - 1990</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">7</div>
+          <img
+            class="item-image"
+            src="https://www.giantbomb.com/a/uploads/original/8/87790/3106947-box_tow.png"
+          />
+          <div class="item-info">
+            <h2 class="item-title">The Outer Worlds</h2>
+            <p class="item-subtitle">Obsidian Entertainment - 2020</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">10</div>
-                    <img class="item-image" src="https://covers.openlibrary.org/b/id/8133582-L.jpg" />
-                    <div class="item-info">
-                        <h2 class="item-title">A Guerra dos Tronos</h2>
-                        <p class="item-subtitle">George R. R. Martin - 1996</p>
-                    </div>
-                </div>
-            </div>
-            <div class="favorites" id="favorite-games">
-                <div class="item-card">
-                    <div class="item-number">1</div>
-                    <img
-                        class="item-image"
-                        src="https://www.giantbomb.com/a/uploads/scale_small/20/201266/3572176-3108026057-EGS_FalloutNewVegas_ObsidianEntertainment_S2_1200x1600-866fe8b8f56e2e7bb862c49bf0627b9a.jpg"
-                    />
-                    <div class="item-info">
-                        <h2 class="item-title">Fallout: New Vegas</h2>
-                        <p class="item-subtitle">Obsidian Entertainment - 2010</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">6</div>
+          <img
+            class="item-image"
+            src="https://images.igdb.com/igdb/image/upload/t_cover_big/co1s0w.webp"
+          />
+          <div class="item-info">
+            <h2 class="item-title">80 days</h2>
+            <p class="item-subtitle">Inkle - 2015</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">2</div>
-                    <img
-                        class="item-image"
-                        src="https://www.giantbomb.com/a/uploads/scale_small/33/338034/3296310-9799857891-libra.jpg"
-                    />
-                    <div class="item-info">
-                        <h2 class="item-title">Inscryption</h2>
-                        <p class="item-subtitle">Daniel Mullins - 2021</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">5</div>
+          <img
+            class="item-image"
+            src="https://www.giantbomb.com/a/uploads/scale_small/0/3661/1895988-skyrim.png"
+          />
+          <div class="item-info">
+            <h2 class="item-title">The Elder Scrolls V: Skyrim</h2>
+            <p class="item-subtitle">Bethesda Game Studios - 2011</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">3</div>
-                    <img
-                        class="item-image"
-                        src="https://www.giantbomb.com/a/uploads/scale_small/8/87790/3140541-box_p2.png"
-                    />
-                    <div class="item-info">
-                        <h2 class="item-title">Portal 2</h2>
-                        <p class="item-subtitle">Valve - 2011</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">4</div>
+          <img
+            class="item-image"
+            src="https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/deltarune.jpeg"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Deltarune</h2>
+            <p class="item-subtitle">Toby Fox - 2018</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">4</div>
-                    <img
-                        class="item-image"
-                        src="https://www.giantbomb.com/a/uploads/scale_small/0/3661/1895988-skyrim.png"
-                    />
-                    <div class="item-info">
-                        <h2 class="item-title">The Elder Scrolls V: Skyrim</h2>
-                        <p class="item-subtitle">Bethesda Game Studios - 2011</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">3</div>
+          <img
+            class="item-image"
+            src="https://www.giantbomb.com/a/uploads/scale_small/8/87790/3140541-box_p2.png"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Portal 2</h2>
+            <p class="item-subtitle">Valve - 2011</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">5</div>
-                    <img class="item-image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/co1s0w.webp" />
-                    <div class="item-info">
-                        <h2 class="item-title">80 days</h2>
-                        <p class="item-subtitle">Inkle - 2015</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">2</div>
+          <img
+            class="item-image"
+            src="https://www.giantbomb.com/a/uploads/scale_small/33/338034/3296310-9799857891-libra.jpg"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Inscryption</h2>
+            <p class="item-subtitle">Daniel Mullins - 2021</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">6</div>
-                    <img
-                        class="item-image"
-                        src="https://www.giantbomb.com/a/uploads/original/8/87790/3106947-box_tow.png"
-                    />
-                    <div class="item-info">
-                        <h2 class="item-title">The Outer Worlds</h2>
-                        <p class="item-subtitle">Obsidian Entertainment - 2020</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">1</div>
+          <img
+            class="item-image"
+            src="https://www.giantbomb.com/a/uploads/scale_small/20/201266/3572176-3108026057-EGS_FalloutNewVegas_ObsidianEntertainment_S2_1200x1600-866fe8b8f56e2e7bb862c49bf0627b9a.jpg"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Fallout: New Vegas</h2>
+            <p class="item-subtitle">Obsidian Entertainment - 2010</p>
+          </div>
+        </div>
+      </div>
 
-                <div class="item-card">
-                    <div class="item-number">7</div>
-                    <img
-                        class="item-image"
-                        src="https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/deltarune.jpeg"
-                    />
-                    <div class="item-info">
-                        <h2 class="item-title">Deltarune</h2>
-                        <p class="item-subtitle">Toby Fox - 2018</p>
-                    </div>
-                </div>
+      <div class="favorites" id="favorite-pokemon">
+        <div class="item-card">
+          <div class="item-number">10</div>
+          <img
+            class="item-image"
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/712.png"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Bergmite</h2>
+            <p class="item-subtitle">Ice - Generation VI</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">8</div>
-                    <img class="item-image" src="https://howlongtobeat.com/games/51545_Pokmon_Showdown.png" />
-                    <div class="item-info">
-                        <h2 class="item-title">Pokémon Showdown!</h2>
-                        <p class="item-subtitle">Zarel - 2011</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">9</div>
+          <img
+            class="item-image"
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/784.png"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Kommo-o</h2>
+            <p class="item-subtitle">Dragon/Fighting - Generation VII</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">9</div>
-                    <img
-                        class="item-image"
-                        src="https://www.giantbomb.com/a/uploads/scale_small/20/201266/3564942-e0da8b90198e94301bc4f0374f9d4099c.png"
-                    />
-                    <div class="item-info">
-                        <h2 class="item-title">Sid Meier's Civilization VI</h2>
-                        <p class="item-subtitle">Firaxis - 2016</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">8</div>
+          <img
+            class="item-image"
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/462.png"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Magnezone</h2>
+            <p class="item-subtitle">Electric/Steel - Generation IV</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">10</div>
-                    <img
-                        class="item-image"
-                        src="https://www.giantbomb.com/a/uploads/original/8/87790/3022574-box_dbh.png"
-                    />
-                    <div class="item-info">
-                        <h2 class="item-title">Detroit: Become Human</h2>
-                        <p class="item-subtitle">Quantic Dream - 2020</p>
-                    </div>
-                </div>
-            </div>
+        <div class="item-card">
+          <div class="item-number">7</div>
+          <img
+            class="item-image"
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/553.png"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Krookodile</h2>
+            <p class="item-subtitle">Ground/Dark - Generation V</p>
+          </div>
+        </div>
 
-            <div class="favorites" id="favorite-pokemon">
-                <div class="item-card">
-                    <div class="item-number">1</div>
-                    <img
-                        class="item-image"
-                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png"
-                    />
-                    <div class="item-info">
-                        <h2 class="item-title">Raichu</h2>
-                        <p class="item-subtitle">Electric - Generation I</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">6</div>
+          <img
+            class="item-image"
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1009.png"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Walking Wake</h2>
+            <p class="item-subtitle">Water/Dragon - Generation IX</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">2</div>
-                    <img
-                        class="item-image"
-                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/335.png"
-                    />
-                    <div class="item-info">
-                        <h2 class="item-title">Zangoose</h2>
-                        <p class="item-subtitle">Normal - Generation III</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">5</div>
+          <img
+            class="item-image"
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1002.png"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Chien-Pao</h2>
+            <p class="item-subtitle">Ice/Dark - Generation IX</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">3</div>
-                    <img
-                        class="item-image"
-                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/160.png"
-                    />
-                    <div class="item-info">
-                        <h2 class="item-title">Feraligatr</h2>
-                        <p class="item-subtitle">Water - Generation II</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">4</div>
+          <img
+            class="item-image"
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/260.png"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Swampert</h2>
+            <p class="item-subtitle">Water/Ground - Generation III</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">4</div>
-                    <img
-                        class="item-image"
-                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/260.png"
-                    />
-                    <div class="item-info">
-                        <h2 class="item-title">Swampert</h2>
-                        <p class="item-subtitle">Water/Ground - Generation III</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">3</div>
+          <img
+            class="item-image"
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/160.png"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Feraligatr</h2>
+            <p class="item-subtitle">Water - Generation II</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">5</div>
-                    <img
-                        class="item-image"
-                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1002.png"
-                    />
-                    <div class="item-info">
-                        <h2 class="item-title">Chien-Pao</h2>
-                        <p class="item-subtitle">Ice/Dark - Generation IX</p>
-                    </div>
-                </div>
+        <div class="item-card">
+          <div class="item-number">2</div>
+          <img
+            class="item-image"
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/335.png"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Zangoose</h2>
+            <p class="item-subtitle">Normal - Generation III</p>
+          </div>
+        </div>
 
-                <div class="item-card">
-                    <div class="item-number">6</div>
-                    <img
-                        class="item-image"
-                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1009.png"
-                    />
-                    <div class="item-info">
-                        <h2 class="item-title">Walking Wake</h2>
-                        <p class="item-subtitle">Water/Dragon - Generation IX</p>
-                    </div>
-                </div>
-
-                <div class="item-card">
-                    <div class="item-number">7</div>
-                    <img
-                        class="item-image"
-                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/553.png"
-                    />
-                    <div class="item-info">
-                        <h2 class="item-title">Krookodile</h2>
-                        <p class="item-subtitle">Ground/Dark - Generation V</p>
-                    </div>
-                </div>
-
-                <div class="item-card">
-                    <div class="item-number">8</div>
-                    <img
-                        class="item-image"
-                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/462.png"
-                    />
-                    <div class="item-info">
-                        <h2 class="item-title">Magnezone</h2>
-                        <p class="item-subtitle">Electric/Steel - Generation IV</p>
-                    </div>
-                </div>
-
-                <div class="item-card">
-                    <div class="item-number">9</div>
-                    <img
-                        class="item-image"
-                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/784.png"
-                    />
-                    <div class="item-info">
-                        <h2 class="item-title">Kommo-o</h2>
-                        <p class="item-subtitle">Dragon/Fighting - Generation VII</p>
-                    </div>
-                </div>
-
-                <div class="item-card">
-                    <div class="item-number">10</div>
-                    <img
-                        class="item-image"
-                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/712.png"
-                    />
-                    <div class="item-info">
-                        <h2 class="item-title">Bergmite</h2>
-                        <p class="item-subtitle">Ice - Generation VI</p>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer>
-            <a href="https://github.com/AndreCruz2005/PaginaDesafioCITI">
-                <img src="assets/github_icon.svg" />
-                <p>SOURCE CODE</p>
-            </a>
-        </footer>
-    </body>
+        <div class="item-card">
+          <div class="item-number">1</div>
+          <img
+            class="item-image"
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png"
+          />
+          <div class="item-info">
+            <h2 class="item-title">Raichu</h2>
+            <p class="item-subtitle">Electric - Generation I</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <a href="https://github.com/AndreCruz2005/MinhaPagina">
+        <img src="assets/github_icon.svg" />
+        <p>SOURCE CODE</p>
+      </a>
+    </footer>
+  </body>
 </html>

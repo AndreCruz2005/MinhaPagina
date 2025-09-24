@@ -68,7 +68,7 @@
 
 }
 
-.item-card:first-of-type {
+.item-card:nth-of-type(10) {
     grid-column: span 3;
 }
 
